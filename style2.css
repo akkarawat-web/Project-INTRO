@@ -1,0 +1,184 @@
+/* ---------------- INfo ---------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', sans-serif;
+}
+
+body {
+    background-color: #fcfbdf; /* สีพื้นหลังเหลืองอ่อนนวล */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ---------------- Header Zone ---------------- */
+header {
+    background-color: #ff9124; /* ส้มโทนแบนเนอร์ */
+    color: #fff;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-brand img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.header-brand .title-text h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.header-brand .title-text h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-left: 10px;
+}
+
+/* ---------------- Navigation Buttons ---------------- */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 10px;
+    background-color: #fcfbdf;
+}
+
+.nav-btn {
+    background-color: #ff9124;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    transition: background-color 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: #e07b1a;
+}
+
+/* ---------------- Main Content ---------------- */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 20px 40px 20px;
+    flex: 1;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.banners-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.banner-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 480px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.banner-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------------- Footer Zone ---------------- */
+footer {
+    background: linear-gradient(to bottom, #fcfbdf 0%, #ffaa56 100%);
+    padding: 30px 40px;
+    font-size: 1rem;
+    color: #111;
+    line-height: 1.6;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-bar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banners-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,130 @@
+/* Reset ค่าพื้นฐาน */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #fcfbdf;
+    color: #333;
+}
+
+/* 1. Header สีส้ม */
+.top-header {
+    background-color: #ff8c00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px; /* ปรับให้แถบสูงขึ้น */
+    color: white;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-logo {
+    width: 60px;  /* ขยายโลโก้ */
+    height: 60px;
+    object-fit: contain;
+}
+
+.site-title h1 {
+    font-size: 18px; /* ขยายตัวหนังสือ */
+    font-weight: bold;
+}
+
+.site-title h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.profile-icon {
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2. เมนูปุ่ม */
+.main-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 12px;
+    background-color: #fcfbdf;
+}
+
+.menu-item {
+    background-color: #ff8c00;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 3. รูปแบนเนอร์บน (เต็มความกว้างจอ) */
+.banner-section {
+    width: 100%;
+}
+
+.banner-section img {
+    width: 100%;
+    height: 250;
+    object-fit: cover;
+    
+    display: block;
+}
+
+/* 4. รูปโปสเตอร์คู่ด้านล่าง (จำกัดความกว้างและจัดกลางเช่นกัน) */
+.poster-section {
+    display: flex;
+    width: 100%;
+    max-width: 1000px; /* <--- เพิ่มตรงนี้: จำกัดความกว้างรวมของโปสเตอร์คู่ */
+    margin: 0 auto;    /* <--- เพิ่มตรงนี้: จัดให้อยู่ตรงกลางหน้าจอ */
+    gap: 15px;
+    padding: 15px 0;
+    background-color: #fcfbdf;
+}
+
+.poster-box {
+    flex: 1;
+}
+
+.poster-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.footer-info {
+    background: linear-gradient(to bottom, #fcfbdf 0%, #ffaa56 100%);
+    padding: 20px 25px;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #333;
+    margin-top: 40px;
+    width: 100%;
+}

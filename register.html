@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มสมัครนักศึกษาใหม่ - มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+
+    <!-- 1. Header -->
+    <div class="top-header">
+        <div class="logo-area">
+            <img src="รูป/logo_kmutnb-(6).png" class="site-logo" alt="Logo">
+            <div class="site-title">
+                <h1>สมัครเข้าศึกษาต่อ ปีการศึกษา 2570</h1>
+                <h2>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
+            </div>
+        </div>
+        <div class="top-nav">
+            <a href="index.html">หน้าแรก</a>
+            <a href="contact.html">ติดต่อเรา</a>
+        </div>
+    </div>
+
+    <!-- 3. Form Section -->
+    <div class="form-container">
+        <h2 class="form-title">ลงทะเบียนสมัครนักศึกษาใหม่</h2>
+        <p class="form-subtitle">กรุณากรอกข้อมูลให้ครบถ้วน</p>
+
+        <form action="#" method="POST" enctype="multipart/form-data">
+            
+            <!-- 1. ข้อมูลส่วนตัว -->
+            <div class="section-title">ข้อมูลส่วนตัว</div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>ชื่อ</label>
+                    <input type="text" placeholder="กรอกชื่อ" required>
+                </div>
+                <div class="form-group">
+                    <label>นามสกุล</label>
+                    <input type="text" placeholder="กรอกนามสกุล" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>เลขบัตรประชาชน</label>
+                    <input type="text" placeholder="กรอกเลขบัตรประชาชน" maxlength="13" required>
+                </div>
+                <div class="form-group">
+                    <label>วันเกิด</label>
+                    <input type="date" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>น้ำหนัก (กิโลกรัม)</label>
+                    <input type="number" placeholder="เช่น 60">
+                </div>
+                <div class="form-group">
+                    <label>ส่วนสูง (เซนติเมตร)</label>
+                    <input type="number" placeholder="เช่น 170">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>เพศ</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> ชาย</label>
+                    <label><input type="radio" name="gender" value="female"> หญิง</label>
+                </div>
+            </div>
+
+            <!-- 2. ข้อมูลการสมัครเรียน -->
+            <div class="section-title">ข้อมูลการสมัครเรียน</div>
+
+            <div class="form-group">
+                <label>คณะสาขาวิชา</label>
+                <select required>
+                    <option value="">เลือกคณะสาขาวิชา</option>
+                    <option value="cs">คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                    <option value="it">คณะบริหารธุรกิจและอุตสาหกรรมบริการ</option>
+                    <option value="ce">คณะอุตสาหกรรมเกษตรดิจิทัล</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>สาขาวิชา</label>
+                <select required>
+                    <option value=""> เลือกสาขาวิชา</option>
+                    <option value="">-- เลือกสาขาวิชาระดับปริญญาตรี 4 ปี (รับวุฒิ ม.6 หรือ ปวช.) --</option>
+                    <option value="cs">สาขาวิชาวิศวกรรมสารสนเทศและเครือข่าย (INE)</option>
+                    <option value="it">สาขาวิชาวิศวกรรมอุตสาหการและการจัดการ (IEM)</option>
+                    <option value="ce">สาขาวิชาเทคโนโลยีเครื่องกลและกระบวนการผลิต (MM)</option>
+                    <option value="cs">สาขาวิชาคอมพิวเตอร์ช่วยออกแบบและบริหารงานก่อสร้าง (CA)</option>
+                    <option value="it">สาขาวิชาวิศวกรรมเกษตรและอาหาร (AFE)<option>
+                    <option value="">-- เลือกสาขาวิชาระดับปริญญาตรีเทียบโอน/ต่อเนื่อง --</option>
+                    <option value="cs">สาขาวิชาวิศวกรรมสารสนเทศและเครือข่าย (INET)</option>
+                    <option value="it">สาขาวิชาการจัดการอุตสาหกรรม (IMT)</option>
+                    <option value="it">สาขาวิชาเทคโนโลยีสารสนเทศ (ITI)</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>วุฒิการศึกษา</label>
+                    <select required>
+                        <option value="">-- เลือกวุฒิการศึกษา --</option>
+                        <option value="m6">มัธยมศึกษาปีที่ 6 (ม.6)</option>
+                        <option value="pvc">ปวช.</option>
+                        <option value="pvs">ปวส.</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>เกรดเฉลี่ย (GPA)</label>
+                    <input type="number" step="0.01" placeholder="เช่น 3.25" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>โรงเรียนเดิม</label>
+                <input type="text" placeholder="กรอกชื่อโรงเรียน">
+            </div>
+
+            <!-- 3. ข้อมูลการติดต่อ -->
+            <div class="section-title">ข้อมูลการติดต่อ</div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>เบอร์โทรศัพท์</label>
+                    <input type="tel" placeholder="08X-XXX-XXXX" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="example@email.com" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>ที่อยู่</label>
+                <textarea rows="3" placeholder="กรอกที่อยู่"></textarea>
+            </div>
+
+            <!-- 4. เอกสาร/หลักฐาน -->
+            <div class="section-title">เอกสาร/หลักฐาน</div>
+
+            <div class="form-group">
+                <label>1. รูปถ่าย</label>
+                <input type="file" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <label>2. วุฒิการศึกษา</label>
+                <input type="file">
+            </div>
+
+            <div class="form-group">
+                <label>3. บัตรประชาชน</label>
+                <input type="file">
+            </div>
+
+            <div class="form-group">
+                <label>4. ทะเบียนบ้าน</label>
+                <input type="file">
+            </div>
+
+            <!-- ปุ่มกดยืนยัน -->
+            <div class="button-group">
+                <button type="submit" class="btn-submit">สมัครเรียน</button>
+                <button type="reset" class="btn-reset">ล้างข้อมูล</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- 4. Footer -->
+    <div class="footer-info">
+        <p>กลุ่มงานรับเข้าศึกษา กองบริการการศึกษา สำนักงานอธิการบดี ชั้น 2 อาคาร TGGS</p>
+        <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ 1518</p>
+        <p>ถนนประชาราษฎร์ 1 แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพฯ 10800</p>
+        <p>+66 2 555-2000 ต่อ 1626,1627</p>
+    </div>
+
+</body>
+</html>

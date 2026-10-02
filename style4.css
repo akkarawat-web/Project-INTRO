@@ -1,0 +1,202 @@
+/* Reset ค่าพื้นฐาน */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #fcfbdf;
+    color: #333;
+}
+
+/* 1. Header สีส้ม */
+.top-header {
+    background-color: #ff8c00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    color: white;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.site-title h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.site-title h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.profile-icon {
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* 2. เมนูปุ่ม */
+.main-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 18px 12px;
+    background-color: #fcfbdf;
+}
+
+.menu-item {
+    background-color: #ff8c00;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 3. ส่วนเนื้อหาติดต่อเรา (Contact Section) */
+.contact-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.contact-title {
+    font-size: 26px;
+    color: #111;
+    font-weight: bold;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ff8c00;
+    padding-bottom: 8px;
+}
+
+.contact-info {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.section-heading {
+    font-weight: 700;
+    font-size: 18px;
+    color: #111;
+}
+
+.sub-heading {
+    color: #444;
+}
+
+.address-text {
+    margin-top: 5px;
+    color: #333;
+}
+
+/* รายการไอคอนติดต่อ */
+.contact-detail-list {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #333;
+}
+
+.contact-item .icon {
+    font-size: 18px;
+    width: 24px;
+    text-align: center;
+}
+
+/* ปุ่ม Facebook ไอคอนวงกลมสีฟ้า */
+.fb-icon {
+    background-color: #1877f2;
+    color: white !important;
+    border-radius: 50%;
+    width: 22px !important;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px !important;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.contact-item a {
+    color: #e65100;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* กล่องแผนที่ */
+.map-box {
+    width: 100%;
+    height: 450px; /* ความสูงของแผนที่ */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 15px;
+}
+
+/* บังคับให้ iframe ใน map-box ขยายเต็มกว้าง-สูง */
+.map-box iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: 0;
+}
+
+/* 4. Footer */
+.footer-info {
+    background: linear-gradient(to bottom, #fcfbdf 0%, #ffaa56 100%);
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-top: 30px;
+}

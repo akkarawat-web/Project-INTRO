@@ -1,0 +1,142 @@
+/* Reset ค่าพื้นฐาน */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #fcfbdf;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 1. Header สีส้ม */
+.top-header {
+    background-color: #ff8c00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    color: white;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.site-title h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.site-title h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.profile-icon {
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* 2. เมนูปุ่ม */
+.main-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 18px 12px;
+    background-color: #fcfbdf;
+}
+
+.menu-item {
+    background-color: #ff8c00;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 3. ส่วนเนื้อหาข้อมูลหลักสูตร */
+.info-container {
+    max-width: 1100px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    flex: 1; /* ดัน Footer ลงล่างสุดเมื่อเนื้อหาน้อย */
+}
+
+.info-title {
+    font-size: 24px;
+    color: #111;
+    font-weight: bold;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ff8c00;
+    padding-bottom: 10px;
+}
+
+.info-content {
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.info-text {
+    font-size: 16px;
+    color: #ff5500; /* สีส้มตามรูปตัวอย่าง */
+    font-weight: bold;
+    word-break: break-all; /* ป้องกันลิงก์ยาวล้นจอ */
+}
+
+.pdf-link {
+    color: #ff5500;
+    text-decoration: underline;
+}
+
+.pdf-link:hover {
+    color: #cc4400;
+}
+
+/* 4. Footer */
+.footer-info {
+    background: linear-gradient(to bottom, #fcfbdf 0%, #ffaa56 100%);
+    padding: 20px 25px;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-top: 30px;
+}
