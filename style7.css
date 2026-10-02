@@ -1,0 +1,204 @@
+/* ==========================================
+   ส่วนหน้าแจ้งเสร็จสิ้นการสมัคร (Success Page)
+   ========================================== */
+.success-container {
+    max-width: 900px;
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.success-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.kmutnb-center-logo {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.success-main-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.success-sub-title {
+    font-size: 15px;
+    color: #555;
+}
+
+/* กล่องการ์ดสีขาว */
+.status-card {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-status-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2b7d76; /* สีโทนเขียวอมฟ้าตามภาพตัวอย่าง */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.status-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* วงกลมเครื่องหมายถูก */
+.check-icon-circle {
+    width: 65px;
+    height: 65px;
+    border: 3px solid #28a745;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.status-text-success {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 30px;
+}
+
+/* ปุ่มกดไปยังหน้าตรวจสอบสถานะ */
+.btn-check-status {
+    background-color: #ff8c00; /* ใช้สีส้มหลักของเว็บ มจพ. */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.btn-check-status:hover {
+    background-color: #e67e00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* ==========================================
+   ส่วนจัดแต่ง Header, Menu และ Footer
+   ========================================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', sans-serif;
+    background-color: #fcfbdf; /* สีพื้นหลังเหลืองอ่อน */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header ส่วนบนสุด (แถบสีส้ม) */
+.top-header {
+    background-color: #ff8c00;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.site-logo {
+    width: 50px;
+    height: auto;
+}
+
+.site-title h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.site-title h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+/* แถบเมนูปุ่มใหญ่ */
+.main-menu {
+    background-color: #e67e00;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.menu-item {
+    background-color: #ffffff;
+    color: #333;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.menu-item:hover, .menu-item.active {
+    background-color: #ffaa56;
+    color: white;
+}
+
+/* แถบ Footer ท้ายเว็บ (สีส้มไล่เฉด) */
+.footer-info {
+    background: linear-gradient(to bottom, #fcfbdf 0%, #ffaa56 100%);
+    padding: 20px 25px;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #333;
+    margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-info p {
+    margin: 3px 0;
+}
